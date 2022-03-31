@@ -1,0 +1,25 @@
+.navbar .navbar-nav .nav-item .active {
+  color: #67971f;
+}
+
+.navbar-toggler:focus {
+  outline: unset !important;
+  border: unset !important;
+  box-shadow: none !important;
+}
+
+.fa_icon {
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  margin-top: 16px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}

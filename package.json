@@ -1,0 +1,32 @@
+{
+  "name": "ecommerce_mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
+    "colors": "^1.4.0",
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-device": "^0.4.2",
+    "express-useragent": "^1.0.15",
+    "express-validator": "^6.14.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.5",
+    "morgan": "^1.10.0",
+    "node-device-detector": "^1.4.4",
+    "nodemailer": "^6.7.2",
+    "slugify": "^1.6.5"
+  }
+}

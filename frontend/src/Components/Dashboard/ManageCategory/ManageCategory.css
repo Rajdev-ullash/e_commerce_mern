@@ -1,0 +1,178 @@
+panel {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+.panel .panel-heading {
+  background: #535353;
+  padding: 15px;
+  border-radius: 0;
+}
+.panel .panel-heading .btn {
+  color: #fff;
+  background-color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease 0s;
+}
+.panel .panel-heading .btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.panel .panel-heading .form-horizontal .form-group {
+  margin: 0;
+}
+.panel .panel-heading .form-horizontal label {
+  color: #fff;
+  margin-right: 10px;
+}
+.panel .panel-heading .form-horizontal .form-control {
+  display: inline-block;
+  width: 80px;
+  border: none;
+  border-radius: 0;
+}
+.panel .panel-heading .form-horizontal .form-control:focus {
+  box-shadow: none;
+  border: none;
+}
+.panel .panel-body {
+  padding: 0;
+  border-radius: 0;
+}
+.panel .panel-body .table thead tr th {
+  color: #fff;
+  background: #8d8d8d;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 12px;
+  border-bottom: none;
+}
+.panel .panel-body .table thead tr th:nth-of-type(1) {
+  width: 10px;
+}
+.panel .panel-body .table thead tr th:nth-of-type(3) {
+  width: 30%;
+}
+.panel .panel-body .table tbody tr td {
+  color: #555;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 13px;
+  vertical-align: middle;
+  border-color: #e7e7e7;
+}
+.panel .panel-body .table tbody tr:nth-child(odd) td {
+  background: #f5f5f5;
+}
+.panel .panel-body .table tbody .action-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.panel .panel-body .table tbody .action-list li {
+  display: inline-block;
+}
+.panel .panel-body .table tbody .action-list li .link_custom {
+  color: #fff;
+  font-size: 13px;
+  line-height: 28px;
+  height: 28px;
+  width: 33px;
+  padding: 0;
+  border-radius: 0;
+  transition: all 0.3s ease 0s;
+}
+.panel .panel-body .table tbody .action-list li .link_custom:hover {
+  box-shadow: 0 0 5px #ddd;
+}
+.panel .panel-footer {
+  color: #fff;
+  background: #535353;
+  font-size: 16px;
+  line-height: 33px;
+  padding: 25px 15px;
+  border-radius: 0;
+}
+.pagination {
+  margin: 0;
+}
+.pagination li .link_custom {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 2px;
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease 0s;
+}
+.pagination li .link_custom:hover,
+.pagination li .link_custom:focus,
+.pagination li.active .link_custom {
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.form_search {
+  width: 20%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.form_search input {
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.form_search label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form_search label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.form_search input:focus + .label-name .content-name,
+.form_search input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 10px;
+  color: #5fa8d3;
+}
+
+.form_search input:focus .label-name::after,
+.form_search input:valid + .label-name:after {
+  transform: translateX(0%);
+}
